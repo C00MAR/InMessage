@@ -16,3 +16,7 @@ window.addEventListener('scroll', () => {
     var drawlength = pathlength * scrollpercentage;
     path.style.strokeDashoffset = pathlength - drawlength;
 })
+
+function scrollto722(){
+    scrollTo(0,722)
+}

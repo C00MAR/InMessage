@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -146,7 +147,7 @@ header{
 }
 
 .left-deco{
-    height: 100vh;
+    height: 130vh;
     left: 0;
 }
 
@@ -154,10 +155,17 @@ header{
     right: 0;
 }
 
+.mid1-right-deco{
+    top: 108vh;
+    height: 100vh;
+    right: 0;
+}
+
 .logolink{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 90px;
 }
 
 .imglogo{
@@ -171,14 +179,34 @@ header{
     position: absolute;
     bottom: 0;
     height: 400vh;
-    left: 673px;
+    left: 683px;
     top: 55%; 
     overflow: hidden;
     z-index: 100;
 }
 
+.scrollbtn1{
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    width: 5vw;
+    height: 5vh;
+}
+
+.boxbtn{
+    position: relative;
+    z-index: 500;
+    left: -37.5vw;
+    top: 90vh;
+}
+
+.arrow{
+    width: 200%;
+    height: 200%;
+}   
+
 .one{
-    background-color: #000000;
+    background-color: #666666;
 }
 
 .two{
@@ -195,7 +223,11 @@ header{
 
 .scroll{
     height: 100vh;
-    width: 50vh;
+    width: 50vw;
     display: flex;
 }
 
+span{
+    font-size: 15px;
+    font-family: "Karla";
+}
