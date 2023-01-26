@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla";
+  background-color: #d9d9d9;
+}
+body header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+body header .bg {
+  position: absolute;
+}
+body header .left-deco {
+  height: 130vh;
+  left: 0;
+}
+body header .top-right-deco {
+  right: 0;
+}
+body header .mid1-right-deco {
+  top: 108vh;
+  height: 100vh;
+  right: 0;
+}
+body header svg {
+  display: inline-block;
+}
+body header .btn-menu {
+  position: fixed;
+  z-index: 102;
+  top: 2em;
+  right: 2em;
+  width: 100vh;
+  height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body header .btn-menu .picto {
+  position: absolute;
+  width: 2.1em;
+  height: 2.1em;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+body header .btn-menu .picto .line {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  background-color: #272B98;
+}
+body header .btn-menu .picto .line:nth-child(1) {
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  transition: 1s all ease-in-out;
+}
+body header .btn-menu .picto .line:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+  width: 66%;
+  background-color: #3a3a3a;
+  transition: 1s all ease-in-out;
+}
+body header .btn-menu .picto .line:nth-child(3) {
+  bottom: 0;
+  margin-top: -1px;
+  width: 33%;
+  background-color: #525252;
+  transition: 1s all ease-in-out;
+}
+body header .btn-menu .close-btn .line:nth-child(1) {
+  transform: rotate(-130deg);
+  height: 2px;
+  width: 100%;
+  display: block;
+  top: 50%;
+  background: #000;
+  position: absolute;
+  transition: 1s all ease-in-out;
+}
+body header .btn-menu .close-btn .line:nth-child(2) {
+  display: block;
+  transform: translateX(100px);
+  transition: 0.4s all ease-in-out;
+}
+body header .btn-menu .close-btn .line:nth-child(3) {
+  transform: rotate(130deg);
+  height: 2px;
+  width: 100%;
+  display: block;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  transition: 1s all ease-in-out;
+}
+body header .btn-menu .menu {
+  width: 70%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all ease-out;
+  background-color: #666666;
+  z-index: -5;
+  transform: translateX(600px);
+}
+body header .btn-menu .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+body header .btn-menu .menu ul li {
+  list-style: none;
+  padding: 6px;
+}
+body header .btn-menu .menu ul li a {
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: 800;
+  color: #000;
+}
+body header .btn-menu .menu ul li a:hover {
+  border-bottom: 5px solid #000;
+  transition: 0.2s all;
+}
+body header .btn-menu .open-menu {
+  transform: translateX(0px);
+}
+body header .header-start-line {
+  position: absolute;
+  bottom: 0;
+  height: 400vh;
+  left: 683px;
+  top: 55%;
+  overflow: hidden;
+  z-index: 100;
+}
+body header .boxbtn {
+  position: relative;
+  z-index: 500;
+  left: -37.5vw;
+  top: 90vh;
+}
+body header .boxbtn .scrollbtn1 {
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  width: 5vw;
+  height: 5vh;
+}
+body header .boxbtn .scrollbtn1 .arrow {
+  width: 200%;
+  height: 200%;
+}
+body header .logolink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+}
+body header .logolink .imglogo {
+  width: 20%;
+  transform-origin: top;
+  color: #343434;
+  cursor: pointer;
+}
+
+.one {
+  background-color: #b9b9b9;
+}
+
+.two {
+  background-color: #545454;
+}
+
+.three {
+  background-color: #666666;
+}
+
+.four {
+  background-color: #ffffff;
+}
+
+.scroll {
+  height: 100vh;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
