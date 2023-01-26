@@ -23,7 +23,7 @@ body{
             right: 0;
         }
         .mid1-right-deco{
-            top: 108vh;
+            top: 110vh;
             height: 100vh;
             right: 0;
         }
@@ -35,8 +35,7 @@ body{
             z-index: 102; 
             top: 2em; 
             right: 2em; 
-            width: 100vh; 
-            height: 100vh; 
+            width: 30vw; 
             -webkit-tap-highlight-color: transparent; 
             outline: none;
             display: flex;
@@ -103,7 +102,7 @@ body{
                 }
             }
             .menu{
-                width: 70%;
+                width: 100%;
                 height: 85vh;
                 display: flex;
                 justify-content: center;
@@ -180,6 +179,67 @@ body{
 
 .one{
     background-color: #b9b9b9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    div{
+        padding-left: 75px;
+        padding-top: 50px;
+        width: 50vw;
+        height: 100vh;
+    }
+    .leftpart{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        perspective: 1500px;
+        .card{
+            padding: 0;
+            z-index: 500;
+            width:  300px;
+            height: 600px;
+            mix-blend-mode: color;
+            box-shadow: 0 1px 5px #00000099;
+            border-radius: 10px;
+            background-image: url(../img/signal_phone.png);
+            background-size: cover;
+            position: relative;
+            transition-duration: 300ms;
+            transition-property: transform, box-shadow;
+            transition-timing-function: ease-out;
+            transform: rotate3d(0);
+            &:hover{
+                transition-duration: 150ms;
+                box-shadow: 0 5px 20px 5px #00000044;
+            }
+        }
+    }
+    .rightpart{
+        h1{
+            font-size: 3.4em;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 1.2em;
+            width: 80%;
+            margin-bottom: 15px;
+        }
+        button{
+            position: absolute;
+            background-color: #000;
+            border-radius: 25px;
+            padding: 15px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 1.5em;
+            z-index: 150;
+        }
+    }
 }
 
 .two{
